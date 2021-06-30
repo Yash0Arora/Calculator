@@ -1,4 +1,5 @@
-sign = input('What Do You Want Me To Do ? \n"+" for Addition \n"-" for Subtarction\n"*" for Multiplication \n"/" for Division \n"E" to Evaluate \n\n    "?" for Help and operators to use in EVALUATE\n')
+import math
+sign = input('What Do You Want Me To Do ? \n"+" for Addition \n"-" for Subtarction\n"*" for Multiplication \n"/" for Division \n"E" to Evaluate \n"sqrt" to Find Square Root \n\n    "?" for Help and operators to use in EVALUATE\n ')
 
 if (sign == "?") :
     help_file = open("helpText.txt", "r")
@@ -49,3 +50,9 @@ if (sign == "E") :
     print("Give your expression")
     expre = input("")
     print(eval(expre))
+
+#to find square root
+
+if sign == 'Sqrt':
+     number = input("Of What Number Should I find Square Root Of? ")
+     print(math.sqrt(int(number)))
